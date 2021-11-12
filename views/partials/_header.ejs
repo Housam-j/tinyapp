@@ -6,9 +6,22 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
+        <a class="nav-item nav-link" href="/register">Register</a>
+        <a class="nav-item nav-link" href="/login">Login</a>
         <a class="nav-item nav-link" href="/urls">My URLs</a>
         <a class="nav-item nav-link" href="/urls/new">Create New URL</a>
       </div>
+      <% if (user) {%>
+      <form method="POST" action="/logout"> 
+          <%= user.email %>
+          <button type="submit">Logout</button>
+      </form>
+        <% } else { %>
+        <form method="POST" action="/logout"> 
+          <button type="submit">LOGOUT</button>
+        </form>
+      <% } %>
+      
     </div>
   </nav>
 </header>
