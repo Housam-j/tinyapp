@@ -6,7 +6,7 @@ TinyApp is a full stack web application built with Node and Express that allows 
 
 !["screenshot description"](#)
 
-!["screenshot description"](#)
+!["Registration Page"](https://github.com/Housam-j/tinyapp/blob/master/docs/Registration_page.png)
 
 ## Dependencies
 
